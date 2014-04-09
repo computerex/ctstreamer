@@ -1,0 +1,59 @@
+.container
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#chatbox
+{
+   height: 180px;
+   width: 400px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   margin-left: auto;
+   margin-right: auto;
+}
+.chatuser
+{
+	float: left;
+}
+.chatmessage
+{
+     width: 380px;
+	 text-align: left;
+	 padding-bottom: 5px;
+}
+.desc
+{
+	text-align: left;
+	width: 355px;
+}
+.streamthumb
+{
+	padding-bottom: 20px;
+}
+.textbottom {vertical-align:text-bottom;} 
+.inlineblock{display: inline-block;}
+#top
+{
+	
+}
+
+#middle
+{
+	padding: 65px;
+    /* center contents */
+    text-align: center;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+
+    /* center contents */
+    text-align: center;
+}
