@@ -12,11 +12,6 @@ CurlWrapper::~CurlWrapper()
 void CurlWrapper::uploadFile(char * url, char * fpath, char * fname)
 {
 	initop();
-	// Read cookies from a previous session, as stored in MyCookieFileName.
-	curl_easy_setopt( curl, CURLOPT_COOKIEFILE, "cookie.txt" );
-	// Save cookies from *this* session in MyCookieFileName	
-	curl_easy_setopt( curl, CURLOPT_COOKIEJAR, "cookie.txt" );
-	
 	struct curl_httppost *formpost=NULL;
 	struct curl_httppost *lastptr=NULL;
 	struct curl_slist *headerlist=NULL;
